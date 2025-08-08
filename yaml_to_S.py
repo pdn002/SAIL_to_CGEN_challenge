@@ -26,6 +26,8 @@ def s_expr(yaml_expr):
         return str(yaml_expr)
 
 if __name__ == "__main__":
+    if (len(sys.argv) != 2):
+        raise Exception('Must have exactly one filname as command line argument')
     with open(sys.argv[1], 'r') as f:
         yaml_expr = yaml.safe_load(f)
     print(s_expr(yaml_expr))
