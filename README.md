@@ -20,6 +20,8 @@ The program takes in the name of the yaml file that is to be read as a command l
 python yaml_to_S.py [file name]
 ```
 ```
-python yaml_to_S.py yaml_examples/combined.yaml
+$ python yaml_to_S.py yaml_examples/map_seq.yaml
+
+(name "Alice") (age 30) (skills ("Python" "Verilog")) (active True)
 ```
-The example_yaml directory has a few more yaml files that the program can be tested with.
+The yaml_examples/ directory has a few more yaml files that the program can be tested with.
